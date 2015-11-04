@@ -1,0 +1,62 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Register Employee</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<style>
+		body 		{ padding-top:80px; }
+	</style>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	
+	<script> 
+    $(function(){
+      $("#includedMenu").load("menu.html"); 
+    });
+    </script> 
+
+</head>
+<body>
+
+
+<div class="panel panel-primary"  style="width:700px; margin:0 auto;">
+
+	<div class="jumbotron text-center" >
+		<h1><span class="fa-google"></span> Add {{titulo}}</h1>
+				<br>
+				<form name="myForm">
+					<div class="form-group">
+
+						<input type="text"  class="form-control input-lg text-center" placeholder="Names" ng-model="newEmployee.names" />
+						<br>
+
+						<input type="text" class="form-control input-lg text-center" placeholder="Last Names" ng-model="newEmployee.lastnames" />
+						<br>
+
+						<input type="text" class="form-control input-lg text-center" placeholder="Profession" ng-model="newEmployee.profession" />
+						<br>
+
+						<input type="text" class="form-control input-lg text-center" placeholder="Businessarea" ng-model="newEmployee.businessarea" />
+						<br>
+
+						<input type="text" class="form-control input-lg text-center" placeholder="Admission Date" ng-model="newEmployee.admissiondate" />
+						<br>
+
+                        <br>
+
+					<!-- Acciones que podemos realizar en el formulario -->
+                    <button type="submit"  class="btn btn-success btn-lg" ng-click="saveEmployee()" ng-disabled="myForm.$invalid || selected">Registrar</button>
+					
+					</div>
+				</form>
+		
+		
+
+
+    </div>
+	</div>
+
+</div>
+</body>
+</html>

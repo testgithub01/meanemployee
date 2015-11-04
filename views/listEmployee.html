@@ -1,0 +1,39 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>List Employee</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<style>
+		body 		{ padding-top:80px; }
+	</style>
+</head>
+<body>
+<div class="panel panel-primary" style="width:950px; margin:0 auto;">
+
+	<div class="jumbotron text-center" ng-init="listEmployee()">
+		<h1><span class=""></span> {{titulo}}</h1>
+
+				<table class="table table-striped">
+					<tr class="info" style="color:blue">
+						<td>Names</td>
+						<td>Lastnames</td>
+						<td>Profession</td>
+						<td>Bussines Area</td>
+						<td>Admission Date</td>
+					</tr>
+					<tr ng-repeat="employee in employees" >
+						<td>{{ employee.names }}</td>
+						<td>{{ employee.lastnames }}</td>
+						<td>{{ employee.profession }}</td>	
+						<td>{{ employee.businessarea }}</td>	
+						<td>{{ employee.admissiondate }}</td>						
+					</tr>
+				</table>					
+		
+	</div>
+
+</div>
+</body>
+</html>

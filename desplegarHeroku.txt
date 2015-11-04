@@ -1,0 +1,17 @@
+Pasos para desplegar en Heroku:
+
+1.- Instalar toolbelt para windows, nos permite ejecutar en el terminal de windows los comandos de Heroku.
+2.- Ir a a la carpeta meanEmpleadosHeroku
+3.- Ejecutar el comando: heroku login
+4.- Ingresar cuenta de correo y paswword que registraron al momento de crear
+    su cuenta en Heroku.
+5.- ejecutar el comando : git init
+6.- ejecutar el comando : git add .
+7.- ejecutar el comando : git commit -m "descripcion del proyecto"
+8.- ejecutar el comando : heroku create
+9.- ejecutar el comando : heroku ps:scale web=1
+10.- ejecutar el comando : git push heroku master
+11.- ejecutar el comando : heroku open
+
+
+@ Si por alguna razón el comando git no es reconocido, ir a la web de git e instalar en su equipo.

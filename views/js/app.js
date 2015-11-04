@@ -1,0 +1,1 @@
+angular.module('employees', ['ngRoute', 'appRoutes','registerEmployeeCtrl','listEmployeeCtrl']);
