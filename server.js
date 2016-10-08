@@ -25,7 +25,7 @@ mongoose.connect(configDB.url); // connect to our database
 console.log('Connect DB Remote MongoLab Afiliado');
 
 
-//app.listen(8083);
+//app.listen(5000); Puerto par desplegar en Heroku
 
 app.listen(process.env.PORT || 5000)
 

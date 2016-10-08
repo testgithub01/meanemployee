@@ -162,7 +162,6 @@ module.exports = function(app) {
   }
 
   //Link routes and actions
-
   app.get('/employee',findAllemployees);
   app.get('/employee/:id',findById);
   app.post('/employee',addemployee);
